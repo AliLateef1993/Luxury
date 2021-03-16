@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body{
+    font-family: 'Bebas Neue', cursive; 
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#container{
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    background-image: url(./images/landingpage.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 1em;
+    left: 5em;
+}
+
+.logo-container{
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar-links{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.navbar-links ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-links ul li a:hover{
+    color: #ff5b0e;
+}
+
+span{
+    color: #ff5b0e;
+}
+
+button{
+    width: 7%;
+    height: 1%;
+    background-color: #ff5b0e;
+    color: #fff;
+    padding: 7px 0;
+    text-transform: uppercase;
+    border: none;
+    font-size: 75%;
+    cursor: pointer;
+    border-radius: 2em;
+}
+
+section{
+    width: 90%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+section h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+section img{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    margin-top: 5%;
+}
+
+.left-arrow{
+    width: 3em;
+    position: absolute;
+    border-radius: 2em;
+    height: 3em;
+    bottom: 0;
+    top: 50%;
+    left: 7%;
+
+    background-color:#ffee36;
+}
+.arrow-image{
+    width: 26%;
+    margin-top: 1em;
+    margin-left: 15%;
+}
+
+.arrow-image{
+    width: 26%;
+    margin-top: 1em;
+    margin-left: 16%;
+}
+.right-arrow{
+    width: 3em;
+    position: absolute;
+    border-radius: 2em;
+    height: 3em;
+    bottom: 0;
+    top: 50%;
+    right: 7%;
+    background-color: #ffee36;
+}
+#sub-nav{
+    width: 100%;
+    height: 10vh;
+    background-color: #6319c8;
+}
+
+.navigation{
+    width: 99%;
+    height: 10vh;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+.navigation li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+@media (max-width: 700px){
+    nav{
+        display: block;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        left: 0em;
+        top: 1em;
+    }
+    .logo-container h2{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    button{
+    position: absolute;
+    left: 11em;
+    bottom: -5em;
+    width: 20%;
+    height: 3em;
+    padding: 10px 0;
+    font-size: 75%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    nav{
+        width: 100%;
+        display: block;
+    }
+    .navbar-links{
+        text-align: center;
+        margin-left: 2em;
+    }
+    .navbar-links ul li a{
+        font-size: 70%;
+    }
+    button{
+        width: 20%;
+        height: 2em;
+        padding: 0px 0;
+        font-size: 75%;
+        position: relative;
+        left: 0;
+        bottom: -2em;
+        }
+        section{
+            width: 90%;
+            position: absolute;
+            top: 35%;
+            left: 5%;
+        }
+        section h1{
+            text-align: center;
+            font-size: 1.8em;
+            color: #fff;
+        }
+        section img{
+            width: 90%;
+            position: relative;
+            left: 5%;
+            right: 0;
+            margin-top: 9%;
+        }
+        .left-arrow{
+            width: 1.5em;
+            position: absolute;
+            border-radius: 2em;
+            height: 1.5em;
+            bottom: 0;
+            top: 60%;
+            left: -3%;
+          background-color:#ffee36;
+        }
+        .arrow-image{
+            width: 30%;
+            margin-top: 30%;
+            margin-left: 30%;
+        }
+
+        .right-arrow{
+            width: 1.4em;
+            position: absolute;
+            border-radius: 2em;
+            height: 1.4em;
+            bottom: 0;
+            top: 60%;
+            right: -4%;
+          background-color:#ffee36;
+        }
+        
+        .left-arrow{
+            width: 1.4em;
+            position: absolute;
+            border-radius: 2em;
+            height: 1.4em;
+            bottom: 0;
+            top: 60%;
+            right: -1%;
+          background-color:#ffee36;
+        }
+        .navigation li a{
+            text-decoration: none;
+            font-size: 1em;
+            margin-left: 1em;
+            color: #fff;
+        }
+        .navigation{
+            width: 100%;
+            height: 10vh;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+}
